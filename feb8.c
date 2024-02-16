@@ -49,6 +49,7 @@ int main(){
 */
 
 //QUESTION 3
+/*
 int main(){
     int t,s;
     printf("enter the number of students: ");
@@ -83,4 +84,63 @@ int main(){
         printf("enter the next set of students:");
         scanf("%d",&t);
     }
+}*/
+
+//You've been tasked with developing a program to analyse data from a temperature sensor array deployed in a research facility. The array is a 2D grid representing temperature readings at different locations within the facility. Your program needs to calculate the sum of all temperature readings and the sum of the temperatures along the diagonal of the grid. 
+/*int main(){
+    int arr[8][8];
+    int i,j;
+    for (i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    
+    for (i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            printf("%d \t",arr[i][j]);
+        }
+        printf("\n");
+    }
+    int sum=0;
+    for (i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            sum=sum+arr[i][j];
+        }
+    }
+    int diag_sum=0;
+    for (i=0;i<4;i++){
+        diag_sum=diag_sum+arr[i][i]+arr[i][3-i] ;
+    }
+
+    printf("sum= %d\nsum of diagonals=%d",sum,diag_sum);
+}*/
+
+//You are tasked with designing a system to monitor patients' vital signs in a hospital. Write a C program to implement this system. Create two functions named temperature and oxygen level, which prompt the user to input the patient's temperature (in degrees Celsius) and oxygen level (in percentage), respectively. Then, in the main function, check to display an alert message stating “critical” if either the temperature exceeds 38.0 degrees Celsius or the oxygen level drops below 90.0%; else, display “normal”. 
+/*int temperature(){
+    int temp;
+    printf("Enter the current temperature in Fahrenheit:\n");
+    scanf( "%d" , &temp );  // read input from user
+    return temp;
+}
+int oxygen_level(){
+    int oxy;
+    printf("Enter the current oxygen level in percentage:\n");
+    scanf( "%d" , &oxy );  // read input from user
+    return oxy;
+}
+int main(){
+    int temp,oxy;
+    temp=temperature();
+    oxy=oxygen_level();
+    if(temp>38 || oxy<90){
+        printf("critical");
+    }
+    else{
+        printf("normal");
+    }
+}*/
+int main(){
+    int a=4;
+    printf("%lu",sizeof(a));
 }
